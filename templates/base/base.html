@@ -1,0 +1,310 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+        <!-- =====================================CSS===================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
+        <link rel="icon" href="{% static 'images/logo.jpg' %}" type="image/jpg">
+        <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+        <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.css' %}">
+        <link rel="stylesheet" href="{% static 'css/jquery.timepicker.css' %}">
+        <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!--<link rel="stylesheet" href="{% static 'fonts/iconic/css/material-design-iconic-font.min.css' %} ">-->
+        <!--<link rel="stylesheet" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %} ">-->
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134621241-1"></script>
+
+
+
+
+      </head>
+    <body>
+
+        <!-- =====================================NAVIGATION BAR===================================== -->
+
+        {% if navigation %}
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+            <div class="container">
+                  <a class="navbar-brand" href="{%url 'ayep:index' %}"> <img src="{% static 'images/logo.jpg'%}" alt="Logo" style="width:113px;"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item {{home}}"><a href="{%url 'ayep:index' %}" class="nav-link">Home</a></li>
+                      <li class="nav-item {{aboutpage}}"><a href="{% url 'ayep:about' %}" class="nav-link">About</a></li>
+                      <li class="nav-item {{gallerypage}}"><a href="{% url 'gallery:index' %}" class="nav-link">Gallery</a></li>
+                      <li class="nav-item {{contactpage}}"><a href="{% url 'contact:index' %}" class="nav-link">Contact</a></li>
+                      <li class="nav-item {{eventspage}}"><a href="{% url 'events:index' %}" class="nav-link">Events</a></li>
+                      <li class="nav-item {{donatepage}}"><a href="{% url 'donate:index' %}" class="nav-link">Donate</a></li>
+                    </ul>
+                  </div>
+            </div>
+	    </nav>
+    <!-- END nav -->
+
+        {% endif %}
+
+      {% block content %}
+
+
+      {% endblock %}
+
+
+        {% if donate %}
+
+        <section class="ftco-section bg-light">
+    	<div class="container">
+          <div class="row">
+          <div class="col-md-12 d-flex align-self-stretch ftco-animate">
+            <div class="media block-6 d-flex services p-3 py-4 d-block">
+              <div class="icon d-flex mb-3"><span class="flaticon-donation-1"></span></div>
+              <div class="media-body pl-4">
+                <h3 class="heading">Make Donation</h3>
+    <!--             <form action="{%url 'donate:index' %}" class="volunter-form">-->
+    <!--                <div class="form-group">-->
+    <!--                  <input type="text" class="donate" placeholder=" Your Name" style="color:#70b443;">-->
+    <!--                </div>-->
+    <!--                <div class="form-group" >-->
+    <!--                  <input type="email" class="donate" placeholder=" Your Email" style="color:#70b443;">-->
+    <!--                </div>-->
+    <!--                <div class="form-group">-->
+    <!--                  <input type="submit" value="Donate" class="btn btn-outline-primary btn-lg" style="color:#2d4bf8; border-color:#2d4bf8;">-->
+    <!--                </div>-->
+				<!--</form>-->
+				<a href="{%url 'donate:index' %}"><button class="btn btn-outline-primary btn-lg" style="color:#2d4bf8; border-color:#2d4bf8;">Donate</button></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    	</div>
+    </section>
+
+        {% endif %}
+
+
+
+        {% if join %}
+
+    <!--<section class="ftco-section-3 img" style="background-image: url({% static 'images/Picture10.png'%});">-->
+    	<!--<div class="overlay"></div>-->
+    	<!--<div class="container">-->
+    		<!--<div class="row d-md-flex">-->
+    		<!--<div class="col-md-6 d-flex ftco-animate">-->
+    			<!--<div class="img img-2 align-self-stretch" style="background-image: url({% static 'images/Picture15.png' %});"></div>-->
+    		<!--</div>-->
+    		<!--<div class="col-md-6 volunteer pl-md-5 ftco-animate">-->
+    			<!--<h3 class="mb-3">Join</h3>-->
+    			<!--<form action="#" class="volunter-form">-->
+            <!--<div class="form-group">-->
+              <!--<input type="text" class="form-control" placeholder="Your Name">-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<input type="text" class="form-control" placeholder="Your Email">-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>-->
+            <!--</div>-->
+            <!--<div class="form-group">-->
+              <!--<input type="submit" value="Join" class="btn btn-white py-3 px-5">-->
+            <!--</div>-->
+          <!--</form>-->
+    		<!--</div>-->
+    		<!--</div>-->
+    	<!--</div>-->
+    <!--</section>-->
+
+
+        <section class="ftco-section-3 img" style="background-image: url({%static 'images/person16.jpg' %});">
+    	<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row d-md-flex">
+    		<div class="col-md-6 d-flex ftco-animate">
+    			<div class="img img-2 align-self-stretch" style="background-image: url({%static 'images/Picture15.png' %});"></div>
+    		</div>
+    		<div class="col-md-6 volunteer pl-md-5 ftco-animate">
+    			<h3 class="mb-3">Join Ayep</h3>
+				<form action="{%url 'ayep:join' %}" method="post" class="volunter-form">
+                    {% csrf_token %}
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+					</div>
+					<div class="form-group">
+					  <input type="text" class="form-control" placeholder="Your Email" name="email" id="email">
+					</div>
+					<p style="color: #000000; font-style: italic;">A link to join shall be sent to your email address</p>
+
+					<!--<div class="form-group">-->
+					<!--  <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message" name="message" id="message"></textarea>-->
+					<!--</div>-->
+					<div class="form-group">
+					  <input type="submit" value="Join" class="btn btn-white py-3 px-5">
+					</div>
+				</form>
+
+
+
+
+
+
+
+
+			<!--<form action="#"  class="validate-form" >-->
+              <!--<div class="form-group validate-input" >-->
+                <!--<input id="name" class=" form-control input100" type="text" name="name" placeholder="Your name">-->
+				<!--<span class="focus-input100"></span>-->
+				<!--<label class="label-input100" for="name">-->
+					<!--<span class="lnr lnr-user m-b-2"></span>-->
+				<!--</label>-->
+              <!--</div>-->
+              <!--<div class="form-group validate-input">-->
+                <!--<input id="email" class="form-control input100" type="text" name="email" placeholder="Eg. example@email.com">-->
+                <!--<span class="focus-input100"></span>-->
+                <!--<label class="label-input100" for="email">-->
+                    <!--<span class="lnr lnr-envelope m-b-5"></span>-->
+                <!--</label>-->
+              <!--</div>&ndash;&gt;-->
+              <!--<div class="form-group validate-input">-->
+                	<!--<textarea id="message" class="form-control input100" name="message" placeholder="Message"></textarea>-->
+					<!--<span class="focus-input100"></span>-->
+					<!--<label class="label-input100 rs1" for="message">-->
+						<!--<span class="lnr lnr-bubble"></span>-->
+					<!--</label>-->
+              <!--</div>-->
+              <!--<div class="form-group" >-->
+                <!--<input type="submit" value="Send " class="btn btn-white py-3 px-5 contact100-form-btn">-->
+              <!--</div>-->
+            <!--</form>-->
+
+    		</div>
+    		</div>
+    	</div>
+    </section>
+
+        {% endif %}
+
+
+
+      <footer class="ftco-footer ftco-section img">
+            <div class="overlay"></div>
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-3">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2" style="color: #28a745" >About Us</h2>
+                  <p>We are a non-partisan, non-governmental, and non-profiting organization youth advocacy....</p>
+
+                  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5 footer_social_list">
+                      <h2 class="ftco-heading-2" style="color: #28a745" >Follow Us</h2>
+                    <!--<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>-->
+                    <li class="ftco-animate"><a href="https://www.facebook.com/ayeponnet2018/" target="_blank"><span class="icon-facebook"></span></a></li>
+                    <!--<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>-->
+                    <!--<li class="ftco-animate"><a href="#"><span class="icon-youtube"></span></a></li>-->
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2" style="color: #28a745" >Recent Events</h2>
+                  <div class="block-21 mb-4 d-flex">
+                    <a class="blog-img mr-4" style="background-image: url({% static 'images/IMAGE.jpg'%});"></a>
+                    <div class="text">
+                      <h3 class="heading"><a href="#">Animal protection</a></h3>
+                      <div class="meta">
+                        <div><a href="#"><span class="icon-calendar"></span> July 12, 2019</a></div>
+                        <!--<div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
+                        <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-21 mb-4 d-flex">
+                    <a class="blog-img mr-4" style="background-image: url({% static 'images/person10.png'%});"></a>
+                    <div class="text">
+                      <h3 class="heading"><a href="#">Water testing</a></h3>
+                      <div class="meta">
+                        <div><a href="#"><span class="icon-calendar"></span> July 12, 2019</a></div>
+                        <!--<div><a href="#"><span class="icon-person"></span> Admin</a></div>-->
+                        <div><a href="#"><span class="icon-chat"></span> 19</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                 <div class="ftco-footer-widget mb-4 ml-md-4">
+                  <h2 class="ftco-heading-2" style="color: #28a745" >Navigation</h2>
+                  <ul class="list-unstyled">
+                      <li ><a href="{% url 'ayep:index' %}" >Home</a></li>
+                      <li ><a href="{% url 'ayep:about' %}" >About</a></li>
+                      <li ><a href="{% url 'gallery:index' %}" >Gallery</a></li>
+                      <li ><a href="{% url 'contact:index' %}" >Contact</a></li>
+                      <li ><a href="{% url 'events:index' %}"  >Events</a></li>
+                      <li ><a href="{% url 'donate:index' %}"  >Donate</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2" style="color: #28a745" >Have a Question?</h2>
+                    <div class="block-23 mb-3">
+                      <ul>
+                        <li><a href="{% url 'contact:location' %}" class="popup-vimeo" ><span class="icon icon-map-marker"></span><span class="text">Hai Malakal, Concord Plaza, South Sudan</span></a></li><br>
+                        <li><a href="{% url 'contact:index' %}"><span class="icon icon-phone"></span><span class="text">+256 780333555</span></a></li>
+                        <li><a href="{% url 'contact:index' %}"><span class="icon icon-envelope"></span><span class="text">info@ayep.net</span></a></li>
+                      </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 text-center">
+
+                <p class="ftco-animate">
+                  <a href="{% url 'ayep:index' %}" >&copy;  <script>document.write(new Date().getFullYear());</script>  |  AYEP</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+      <!-- loader -->
+      <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+      <script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+      <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+      <script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+      <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+      <script src="{% static 'js/aos.js' %}"></script>
+      <script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap-datepicker.js' %}"></script>
+      <script src="{% static 'js/jquery.timepicker.min.js' %}"></script>
+      <script src="{% static 'js/scrollax.min.js' %}"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+      <script src="{% static 'js/google-map.js' %}"></script>
+      <script src="{% static 'js/main.js' %}"></script>
+
+    </body>
+</html>

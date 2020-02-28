@@ -1,0 +1,400 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}Gallery{% endblock %}
+
+{% block content %}
+
+
+
+          <div class="hero-wrap" style="background-image: url({% static 'images/ee.jpeg' %});" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6,  }" style="color: #2df84f;">Life’s most persistent and urgent question is, what are you for others? Great Martin Luther King </h1>
+                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="{% url 'ayep:video' %}" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"><span class="icon-play mr-2"> watch video</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--images-->
+
+    <section class="ftco-section ftco-gallery">
+    	<div class="container">
+
+	    	<div class="d-md-flex">
+				<!--{% if recent_events %}-->
+					<!--{% for event in recent_events %}-->
+						<!--<a href="{% static 'events/images/ee.jpeg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'events/images/ee.jpeg' %});">-->
+							<!--<div class="icon d-flex justify-content-center align-items-center">-->
+								<!--<span class="icon-search"></span>-->
+							<!--</div>-->
+						<!--</a>-->
+					<!--{% endfor %}-->
+				<!--{% else %}-->
+					<!--<p>No events</p>-->
+				<!--{% endif %}-->
+
+				<a href="{% static 'images/Picture24.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture24.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/En4.jpeg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/En4.jpeg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/En6.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/En6.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory1.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory1.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+	    	</div>
+
+
+
+
+
+	    	<div class="d-md-flex">
+		    	<a href="{% static 'images/factory2.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory2.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory3.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory3.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory4.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory4.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory5.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory5.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+		    <div class="d-md-flex">
+		    	<a href="{% static 'images/factory6.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory6.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory7.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory7.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory8.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory8.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture27.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture27.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/person16.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person16.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAG0103.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAG0103.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAG0142.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAG0142.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAGE0.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAGE0.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/IMAGE.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAGE.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAGE01.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAGE01.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAGE03.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAGE03.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/IMAGE04.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/IMAGE04.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/person1.JPG' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person1.JPG' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person2.JPG' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person2.JPG' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person3.JPG' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person3.JPG' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person4.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person4.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/person5.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person5.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person6.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person6.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person7.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person7.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person8.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person8.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/person9.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person9.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person10.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person10.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person11.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person11.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person12.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person12.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/person13.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person13.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person14.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person14.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person15.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person15.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/person16.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/person16.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture000.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture000.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture0000.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture0000.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture0g.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture0g.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture1.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture1.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture2.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture2.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture002.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture002.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture3.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture3.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture4.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture4.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture5.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture5.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture9.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture9.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture10.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture10.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture11.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture11.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture12.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture12.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture13.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture13.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture14.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture14.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture15.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture15.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture16.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture16.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture17.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture17.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture18.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture18.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture24.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture24.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/rubbish1.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/rubbish1.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/rubbish2.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/rubbish2.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/rubbish3.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/rubbish3.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/factory7.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/factory7.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    </div>
+			<div class="d-md-flex">
+		    	<a href="{% static 'images/Picture26.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture26.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/oil tanks.jpg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/oil tanks.jpg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/Picture18.png' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/Picture18.png' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+		    	<a href="{% static 'images/ee.jpeg' %}" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url({% static 'images/ee.jpeg' %});">
+		    		<div class="icon d-flex justify-content-center align-items-center">
+		    			<span class="icon-search"></span>
+		    		</div>
+		    	</a>
+
+		    </div>
+	    </div>
+    </section>
+
+{% endblock %}

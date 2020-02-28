@@ -1,0 +1,182 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}Join Form{% endblock %}
+
+{% block content %}
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar" >
+            <div class="container">
+                  <a class="navbar-brand" href="{%url 'ayep:index' %}"> <img src="{% static 'images/logo.jpg'%}" alt="Logo" style="width:113px;"></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="oi oi-menu"></span> Menu
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item {{home}}"><a href="{%url 'ayep:index' %}" class="nav-link">Home</a></li>
+                      <li class="nav-item {{aboutpage}}" ><a href="{% url 'ayep:about' %}" class="nav-link" style="color:#6bb03b;">About</a></li>
+                      <li class="nav-item {{gallerypage}}"><a href="{% url 'gallery:index' %}" class="nav-link" style="color:#6bb03b;">Gallery</a></li>
+                      <li class="nav-item {{contactpage}}"><a href="{% url 'contact:index' %}" class="nav-link" style="color:#6bb03b;">Contact</a></li>
+                      <li class="nav-item {{eventspage}}"><a href="{% url 'events:index' %}" class="nav-link" style="color:#6bb03b;">Events</a></li>
+
+                    </ul>
+                  </div>
+            </div>
+	    </nav>
+
+<br>
+<br>
+<br>
+
+<!--style="background-image: url({% static 'images/ee.jpeg' %});"-->
+
+
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container" >
+        <!--form-->
+        <div class="row block-9" id="join_form">
+            <div class="col-md-3">
+
+            </div>
+
+            <div class="col-md-6 pr-md-5">
+          	<h4 class="mb-4" style="text-align:center; color:#3e64a3;" >Donation Details</h4>
+            <form action="{%url 'ayep:send' %}"  method="post" class="validate-form" >
+              {% csrf_token %}
+              <div class="form-group validate-input" >
+                <input type="text" class="form-control" placeholder="First Name" name="first_name" id="first_name">
+                <!--<input id="name" class=" form-control input100" type="text" name="name" placeholder="Your name">-->
+				<!--<span class="focus-input100"></span>-->
+				<!--<label class="label-input100" for="name">-->
+					<!--<span class="lnr lnr-user m-b-2"></span>-->
+				<!--</label>-->
+              </div>
+              <div class="form-group validate-input" >
+                <input type="text" class="form-control" placeholder="Last Name" name="last_name" id="last_name">
+                <!--<input id="name" class=" form-control input100" type="text" name="name" placeholder="Your name">-->
+				<!--<span class="focus-input100"></span>-->
+				<!--<label class="label-input100" for="name">-->
+					<!--<span class="lnr lnr-user m-b-2"></span>-->
+				<!--</label>-->
+              </div>
+              <div class="form-group validate-input" >
+                <input type="email" class="form-control" placeholder="Email" name="email" id="email">
+                <!--<input id="name" class=" form-control input100" type="text" name="name" placeholder="Your name">-->
+				<!--<span class="focus-input100"></span>-->
+				<!--<label class="label-input100" for="name">-->
+					<!--<span class="lnr lnr-user m-b-2"></span>-->
+				<!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <input type="tel" class="form-control" placeholder="Phone Number (optional)" name="phone" id="phone">
+                <!--<input id="email" class="form-control input100" type="text" name="email" placeholder="Eg. example@email.com">-->
+                <!--<span class="focus-input100"></span>-->
+                <!--<label class="label-input100" for="email">-->
+                    <!--<span class="lnr lnr-envelope m-b-5"></span>-->
+                <!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <textarea cols="15" rows="2" class="form-control" placeholder="Item donated" name="item_donated" id="item_donated"></textarea>
+                	<!--<textarea id="message" class="form-control input100" name="message" placeholder="Message"></textarea>-->
+					<!--<span class="focus-input100"></span>-->
+					<!--<label class="label-input100 rs1" for="message">-->
+						<!--<span class="lnr lnr-bubble"></span>-->
+					<!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <textarea cols="15" rows="3" class="form-control" placeholder="Purpose for donation" name="purpose" id="purpose"></textarea>
+                	<!--<textarea id="message" class="form-control input100" name="message" placeholder="Message"></textarea>-->
+					<!--<span class="focus-input100"></span>-->
+					<!--<label class="label-input100 rs1" for="message">-->
+						<!--<span class="lnr lnr-bubble"></span>-->
+					<!--</label>-->
+              </div>
+              <div class="form-group" >
+                <input type="submit" value="Donate " class="btn btn-success">
+
+                <!--<input type="submit" value="Send " class="btn btn-success contact100-form-btn">-->
+              </div>
+
+
+              <!--<div class="form-group validate-input">-->
+                <!--<input type="date" class="form-control" placeholder="Date" name="date" id="date">-->
+                <!--&lt;!&ndash;<input id="subject" class="form-control input100" type="text" name="subject" placeholder="Subject">&ndash;&gt;-->
+                <!--&lt;!&ndash;<span class="focus-input100"></span>&ndash;&gt;-->
+                <!--&lt;!&ndash;<label class="label-input100" for="subject">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<span class="lnr lnr-user m-b-2"></span>&ndash;&gt;-->
+                <!--&lt;!&ndash;</label>&ndash;&gt;-->
+              <!--</div>-->
+
+
+            </form>
+
+          </div>
+
+            <div class="col-md-3">
+
+            </div>
+      </div>
+
+      </div>
+    </section>
+
+{% endblock %}
+
+
+
+ <!--<div class="row">-->
+          <!--<div class="col-md-12 d-flex align-self-stretch ftco-animate">-->
+              <!--<div class="col-sm-3">-->
+
+              <!--</div>-->
+            <!--<div class="media block-6 d-flex services p-3 py-4 d-block">-->
+                <!---->
+              <!--<div class="media-body pl-4">-->
+                <!--<h3 class="heading">Joining Details</h3>-->
+                 <!--<form action="#" class="volunter-form">-->
+                    <!--<div class="form-group">-->
+                      <!--<input type="text" class="donate" placeholder=" Your Name" style="color:#70b443;">-->
+                    <!--</div>-->
+                    <!--<div class="form-group" >-->
+                      <!--<input type="text" class="donate" placeholder=" Your Email" style="color:#70b443;">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                      <!--<input type="submit" value="Donate" class="btn btn-outline-primary btn-lg" style="color:#2d4bf8; border-color:#2d4bf8;">-->
+                    <!--</div>-->
+				<!--</form>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</div>-->
+
+<!--<section class="ftco-section bg-light">-->
+    <!--<div class="container">-->
+         <!--<div class="row d-flex">-->
+
+            <!--<div class="col-lg-2 d-flex mb-sm-4 ftco-animate">-->
+            <!--</div>-->
+            <!--<div class="col-lg-8 d-flex mb-sm-4 ftco-animate">-->
+                 <!--<h3 class="heading">Joining Details</h3>-->
+                 <!--<form action="#" class="volunter-form">-->
+                    <!--<div class="form-group">-->
+                      <!--<input type="text" class="donate" placeholder=" Your Name" style="color:#70b443;">-->
+                    <!--</div>-->
+                    <!--<div class="form-group" >-->
+                      <!--<input type="text" class="donate" placeholder=" Your Email" style="color:#70b443;">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                      <!--<input type="submit" value="Donate" class="btn btn-outline-primary btn-lg" style="color:#2d4bf8; border-color:#2d4bf8;">-->
+                    <!--</div>-->
+                <!--</form>-->
+            <!--</div>-->
+            <!--<div class="col-lg-2 d-flex mb-sm-4 ftco-animate">-->
+
+            <!--</div>-->
+
+
+        <!--</div>-->
+    <!--</div>-->
+    <!--</section>-->

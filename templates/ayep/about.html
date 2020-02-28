@@ -1,0 +1,188 @@
+
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+        <div class="hero-wrap" style="background-image: url({% static 'images/Picture15.png' %});" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6,  }" style="color: #2df84f;">Life’s most persistent and urgent question is, what are you for others? Great Martin Luther King </h1>
+                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="{% url 'ayep:video' %}" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"><span class="icon-play mr-2"> watch video</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+    <!-- =====================================INTRODUCTION===================================== -->
+    <section class="ftco-section bg-light">
+    	<div class="container">
+
+    		<div class="row d-flex">
+    			<div class="col-md-6 d-flex ftco-animate">
+    				<div class="img img-about align-self-stretch" style="background-image: url({% static 'images/IMAGE.jpg' %}); width: 100%;"></div>
+    			</div>
+    			<div class="col-md-6 pl-md-5 ftco-animate">
+    				<h2 class="mb-4" style="color: #28a745"  >Welcome to AYEP</h2>
+    				<p>Advocacy Youth for Environmental Protection (AYEP): it’s a non-partisan, non-governmental,
+						and non-profiting organization youth advocacy seeking to invest its total efforts in human
+						capacitance through conscience education and research restocking, and humble lobbying
+						amongst the stakeholders to openly share needed resource information.</p>
+    			</div>
+        </div>
+        <br>
+        <div class="row d-flex">
+        	<div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3 style="color: #28a745" >Vision</h3>
+        					<div class="text">
+		        				<p>Offering primary support for a community commitment to the rights of safe, clean and healthy
+                      environment to achieve economic and social justice for all inhabitants.</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3 style="color: #28a745" >Mission</h3>
+        					<div class="text">
+		        				<p>Toward improvement of a community welfare and development into sounding environmental
+                      stewardship in the most impaired exploitation areas; by working in close relations with agencies.</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="row d-flex">
+        	<div class="col-lg-12 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3 style="color: #28a745" >Organization Core Values</h3>
+        					<div class="text">
+		        				<p>Our organization step focus in a live sense that our actions are scrutinized and checked before
+                      they are put out for public consumption in order to avoid misconceptions or misinformation; and
+                      also embarking on consistent and inspirational approach to promotes humanitarian values most
+                      specifically the five fundamental principles of international standards; which are accustomed to;
+                      independence, neutrality, humanity, impartiality and universality.
+                      AYEP encourages voluntary sustainable work approach for the affected communities and
+                      encourages diversification of responses which is not discriminative in term of support,
+                      employment and opportunities investment in human socioeconomic and social wellbeing</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+    	</div>
+    </section>
+
+    <!-- people -->
+    <section class="ftco-section">
+        <div class="container">
+             <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section ftco-animate text-center">
+                    <h2 class="mb-4"  style="color: #28a745" >Founders</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--style="width: 18rem;"-->
+            <div class="col-lg-4 d-flex mb-sm-4 ftco-animate"><div class="card" >
+                  <img class="card-img-top" src="{% static 'images/logo.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Deng Ayar</h5>
+
+                    <p class="card-text">Founder</p>
+                    <p class="card-text">Life’s most persistent and urgent question is, what are you for others? Great Martin Luther King</p>
+                    <p class="card-text">+256 780333555</p>
+                    <p class="card-text"><a href="https://www.gmail.com/" target="_blank" style="color: #28a745">dengayar@ayep.net</a></p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex mb-sm-4 ftco-animate"><div class="card" >
+                  <img class="card-img-top" src="{% static 'images/matthw.jpg' %}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Uwar Matthew Donato</h5>
+
+                    <p class="card-text">Founder</p>
+                    <p class="card-text">Life’s most persistent and urgent question is, what are you for others? Great Martin Luther King</p>
+                    <p class="card-text">+211911802281</p>
+                    <p class="card-text"><a href="https://www.gmail.com/" target="_blank" style="color: #28a745">mathewdanto@ayep.net</a></p>
+                    <!--uwar.mathewdanto@gmail.com-->
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <!-- ============MISSION, VISION AND Organization Core Values===================== -->
+    <!-- <section class="ftco-section bg-light">
+      <div class="container">
+        <div class="row d-flex">
+        	<div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3>Vision</h3>
+        					<div class="text">
+		        				<p>Offering primary support for a community commitment to the rights of safe, clean and healthy
+                      environment to achieve economic and social justice for all inhabitants.</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="col-lg-6 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3>Mision</h3>
+        					<div class="text">
+		        				<p>Toward improvement of a community welfare and development into sounding environmental
+                      stewardship in the most impaired exploitation areas; by working in close relations with agencies.</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+        <div class="row d-flex">
+        	<div class="col-lg-12 d-flex mb-sm-4 ftco-animate">
+        		<div class="staff">
+        			<div class="d-flex mb-4">
+        				<div class="info ml-4">
+        					<h3>Organization Core Values</h3>
+        					<div class="text">
+		        				<p>Our organization step focus in a live sense that our actions are scrutinized and checked before
+                      they are put out for public consumption in order to avoid misconceptions or misinformation; and
+                      also embarking on consistent and inspirational approach to promotes humanitarian values most
+                      specifically the five fundamental principles of international standards; which are accustomed to;
+                      independence, neutrality, humanity, impartiality and universality.
+                      AYEP encourages voluntary sustainable work approach for the affected communities and
+                      encourages diversification of responses which is not discriminative in term of support,
+                      employment and opportunities investment in human socioeconomic and social wellbeing</p>
+		        			</div>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+ {% endblock %}

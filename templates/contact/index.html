@@ -1,0 +1,98 @@
+{% extends "base/base.html" %}
+
+{% load static %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+
+        <div class="hero-wrap" style="background-image: url({% static 'images/ee.jpeg' %});" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+            <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+              <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+                <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6,  }" style="color: #2df84f;">Life’s most persistent and urgent question is, what are you for others? Great Martin Luther King </h1>
+                <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="{% url 'ayep:video' %}" class="btn btn-white btn-outline-white px-4 py-3 popup-vimeo"><span class="icon-play mr-2"> watch video</span></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    <section class="ftco-section contact-section ftco-degree-bg">
+      <div class="container">
+        <div class="row d-flex mb-5 contact-info">
+          <div class="col-md-12 mb-4">
+            <h2 class="h4">Contact Information</h2>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-md-3">
+            <p style="color: #28a745"><span>Address:</span> Hai Malakal, Concord Plaza, South Sudan </p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Phone:</span> <a href="#" style="color: #28a745">+256 780333555</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><span>Email:</span> <a href="https://www.gmail.com/" target="_blank" style="color: #28a745">info@ayep.net</a></p>
+          </div>
+          <div class="col-md-3">
+            <p ><span>Website:</span> <a href="{% url 'ayep:index' %}" style="color: #28a745">www.ayep.net</a></p>
+          </div>
+        </div>
+
+        <!--form-->
+        <div class="row block-9" id="formContact">
+          <div class="col-md-6 pr-md-5">
+          	<h4 class="mb-4" >Do you have any questions?</h4>
+            <form action="{%url 'contact:form' %}"  method="post" class="validate-form" >
+              {% csrf_token %}
+              <div class="form-group validate-input" >
+                <input type="text" class="form-control" placeholder="Your Name" name="name" id="name">
+                <!--<input id="name" class=" form-control input100" type="text" name="name" placeholder="Your name">-->
+				<!--<span class="focus-input100"></span>-->
+				<!--<label class="label-input100" for="name">-->
+					<!--<span class="lnr lnr-user m-b-2"></span>-->
+				<!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <input type="email" class="form-control" placeholder="Your Email" name="email" id="email">
+                <!--<input id="email" class="form-control input100" type="text" name="email" placeholder="Eg. example@email.com">-->
+                <!--<span class="focus-input100"></span>-->
+                <!--<label class="label-input100" for="email">-->
+                    <!--<span class="lnr lnr-envelope m-b-5"></span>-->
+                <!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <input type="text" class="form-control" placeholder="Subject" name="subject" id="subject">
+                <!--<input id="subject" class="form-control input100" type="text" name="subject" placeholder="Subject">-->
+                <!--<span class="focus-input100"></span>-->
+                <!--<label class="label-input100" for="subject">-->
+                    <!--<span class="lnr lnr-user m-b-2"></span>-->
+                <!--</label>-->
+              </div>
+              <div class="form-group validate-input">
+                <textarea cols="30" rows="7" class="form-control" placeholder="Message" name="message" id="message"></textarea>
+                	<!--<textarea id="message" class="form-control input100" name="message" placeholder="Message"></textarea>-->
+					<!--<span class="focus-input100"></span>-->
+					<!--<label class="label-input100 rs1" for="message">-->
+						<!--<span class="lnr lnr-bubble"></span>-->
+					<!--</label>-->
+              </div>
+              <div class="form-group" >
+                <input type="submit" value="Send " class="btn btn-success">
+
+                <!--<input type="submit" value="Send " class="btn btn-success contact100-form-btn">-->
+              </div>
+            </form>
+
+          </div>
+
+          <div class="col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15902.33582311674!2d31.60309551238608!3d4.841270125010621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x171281cf2f4cd327%3A0xc90eb64c8ac57d27!2sHai+Malakal%2C+Juba%2C+South+Sudan!5e0!3m2!1sen!2sug!4v1550495087751" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+{% endblock %}
