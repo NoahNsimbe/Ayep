@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'cm4pog1j3p$asi5ky8fh$kmu1)iw&ulx)el#cu+al+n^#bv9l6'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['www.ayep.net']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'AyepWebsite.urls'
+ROOT_URLCONF = ''
 
 TEMPLATES = [
     {
@@ -89,9 +89,9 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'ayep',
-#         'USER': 'ayepadmin',
-#         'PASSWORD': '9@55w0r6',
+#         'NAME': '',
+#         'USER': '',
+#         'PASSWORD': '',
 #         'HOST': '',
 #         'PORT': '',
 #     }
@@ -156,7 +156,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'ayepwebsite@gmail.com'
-EMAIL_HOST_PASSWORD = '9@55w0r6'
-# EMAIL_HOST_PASSWORD = '9@55w0r6'
-AYEP_EMAIL = 'info@ayep.net'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
+# EMAIL_HOST_PASSWORD = ''
+AYEP_EMAIL = ''
